@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Media Landscape - Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active" data-slide="1">
+            <div class="slide-content title-slide">
+                <h1>Japanese Media Landscape</h1>
+                <h2>Traditional and Digital Convergence in Modern Japan</h2>
+                <div class="subtitle">
+                    <p>Media Studies / Japanese Studies Course</p>
+                    <p class="date">September 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Overview -->
+        <div class="slide" data-slide="2">
+            <div class="slide-content">
+                <h1>Overview</h1>
+                <div class="overview-topics">
+                    <div class="topic">
+                        <h3>1. Traditional Print Media</h3>
+                        <p>Japan's major newspapers and circulation patterns</p>
+                    </div>
+                    <div class="topic">
+                        <h3>2. Television Broadcasting</h3>
+                        <p>Public NHK and commercial network systems</p>
+                    </div>
+                    <div class="topic">
+                        <h3>3. Digital Media Revolution</h3>
+                        <p>Online news platforms and social media dominance</p>
+                    </div>
+                    <div class="topic">
+                        <h3>4. Ownership & Political Dynamics</h3>
+                        <p>Media conglomerates and regional variations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Newspapers -->
+        <div class="slide" data-slide="3">
+            <div class="slide-content">
+                <h1>Japan's Big Five National Newspapers</h1>
+                <div class="newspapers-content">
+                    <div class="chart-section">
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="newspaperChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="newspapers-list">
+                        <div class="newspaper-item">
+                            <strong>Yomiuri Shimbun</strong> (5.85M) - Conservative, pro-US alliance
+                        </div>
+                        <div class="newspaper-item">
+                            <strong>Asahi Shimbun</strong> (3.39M) - Center-left, liberal flagship
+                        </div>
+                        <div class="newspaper-item">
+                            <strong>Mainichi Shimbun</strong> (3.3M) - Centrist, moderate perspectives
+                        </div>
+                        <div class="newspaper-item">
+                            <strong>Nikkei Shimbun</strong> (2.77M) - Business/Conservative
+                        </div>
+                        <div class="newspaper-item">
+                            <strong>Sankei Shimbun</strong> (1.6M) - Conservative, nationalist
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Television Broadcasting -->
+        <div class="slide" data-slide="4">
+            <div class="slide-content">
+                <h1>Television: The Dominant Medium</h1>
+                <div class="tv-content">
+                    <div class="tv-section">
+                        <h3>Public Broadcasting</h3>
+                        <div class="tv-details">
+                            <h4>NHK (Japan Broadcasting Corporation)</h4>
+                            <ul>
+                                <li>License fee funded</li>
+                                <li>600+ billion yen annual revenue</li>
+                                <li>Political independence concerns</li>
+                                <li>Two terrestrial channels + satellite</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tv-section">
+                        <h3>Commercial Networks</h3>
+                        <div class="tv-details">
+                            <ul>
+                                <li><strong>NTV</strong> - Yomiuri Group (Conservative)</li>
+                                <li><strong>TBS</strong> - Independent commercial</li>
+                                <li><strong>Fuji TV</strong> - Fujisankei Group</li>
+                                <li><strong>TV Asahi</strong> - Asahi Group (Liberal)</li>
+                                <li><strong>TV Tokyo</strong> - Business focused</li>
+                            </ul>
+                            <p class="note">All advertising-dependent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Digital Revolution -->
+        <div class="slide" data-slide="5">
+            <div class="slide-content">
+                <h1>Online News and Social Media Dominance</h1>
+                <div class="digital-content">
+                    <div class="highlight-box">
+                        <h3>Yahoo! News Japan</h3>
+                        <p class="big-stat">921 Million Monthly Visits</p>
+                        <p>World's most popular news website</p>
+                    </div>
+                    <div class="social-media-section">
+                        <h3>Social Media Platform Usage</h3>
+                        <div class="chart-container" style="position: relative; height: 280px;">
+                            <canvas id="socialMediaChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Ownership Patterns -->
+        <div class="slide" data-slide="6">
+            <div class="slide-content">
+                <h1>Media Conglomerates and Cross-Ownership</h1>
+                <div class="ownership-content">
+                    <h3>Major Media Groups</h3>
+                    <div class="ownership-groups">
+                        <div class="group">
+                            <h4>Yomiuri Group</h4>
+                            <p>Yomiuri Shimbun + Nippon TV (NTV)</p>
+                        </div>
+                        <div class="group">
+                            <h4>Fujisankei Group</h4>
+                            <p>Sankei Shimbun + Fuji TV</p>
+                        </div>
+                        <div class="group">
+                            <h4>Asahi Group</h4>
+                            <p>Asahi Shimbun + TV Asahi</p>
+                        </div>
+                    </div>
+                    <div class="kisha-club">
+                        <h3>Kisha Kurabu (Press Club) System</h3>
+                        <ul>
+                            <li>Exclusive access to government sources</li>
+                            <li>Controls information flow</li>
+                            <li>Maintains media establishment power</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Political Orientations -->
+        <div class="slide" data-slide="7">
+            <div class="slide-content">
+                <h1>Political Parallelism in Japanese Media</h1>
+                <div class="political-content">
+                    <div class="political-side conservative">
+                        <h3>Conservative</h3>
+                        <div class="outlets">
+                            <p><strong>Yomiuri, Sankei, Fuji TV</strong></p>
+                        </div>
+                        <ul>
+                            <li>Pro-LDP government</li>
+                            <li>Constitutional revision support</li>
+                            <li>Strong US alliance</li>
+                            <li>Defense spending increases</li>
+                        </ul>
+                    </div>
+                    <div class="political-side liberal">
+                        <h3>Liberal</h3>
+                        <div class="outlets">
+                            <p><strong>Asahi, Mainichi, TV Asahi</strong></p>
+                        </div>
+                        <ul>
+                            <li>Anti-war constitution protection</li>
+                            <li>Social equality advocacy</li>
+                            <li>Environmental issues focus</li>
+                            <li>Government oversight</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="echo-chambers">
+                    <p class="note"><em>Note: Social media platforms increasingly create echo chambers reinforcing these divisions</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Regional Differences -->
+        <div class="slide" data-slide="8">
+            <div class="slide-content">
+                <h1>Geographic and Demographic Variations</h1>
+                <div class="regional-content">
+                    <div class="regional-section">
+                        <h3>Urban vs Rural Priorities</h3>
+                        <div class="comparison">
+                            <div class="urban">
+                                <h4>Urban Areas</h4>
+                                <ul>
+                                    <li>Career advancement focus</li>
+                                    <li>Consumer culture coverage</li>
+                                    <li>Global connectivity themes</li>
+                                </ul>
+                            </div>
+                            <div class="rural">
+                                <h4>Rural Areas</h4>
+                                <ul>
+                                    <li>Community-centered stories</li>
+                                    <li>Traditional values emphasis</li>
+                                    <li>Local agriculture and industry</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="age-demographics">
+                        <h3>Age Demographics</h3>
+                        <div class="age-stats">
+                            <div class="age-group">
+                                <h4>Older Adults (65+)</h4>
+                                <p class="big-stat">240+ min/day</p>
+                                <p>Traditional media consumption</p>
+                            </div>
+                            <div class="age-group">
+                                <h4>Teenagers (13-19)</h4>
+                                <p class="big-stat">46 min/day</p>
+                                <p>Traditional media consumption</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Current Challenges -->
+        <div class="slide" data-slide="9">
+            <div class="slide-content">
+                <h1>Digital Transformation Pressures</h1>
+                <div class="challenges-content">
+                    <div class="challenge">
+                        <h3>Newspaper Circulation Decline</h3>
+                        <div class="decline-stats">
+                            <span class="stat-old">47.8M (2012)</span>
+                            <span class="arrow">→</span>
+                            <span class="stat-new">31M (2022)</span>
+                        </div>
+                        <p>35% decrease in a decade</p>
+                    </div>
+                    <div class="challenge">
+                        <h3>TV Viewership Collapse Among Youth</h3>
+                        <p>Young audiences migrating to streaming and social platforms</p>
+                    </div>
+                    <div class="challenge">
+                        <h3>Digital Advertising Growth</h3>
+                        <div class="ad-revenue">
+                            <div class="revenue-item">
+                                <strong>Internet Ads:</strong> ¥2.7 trillion (2021)
+                            </div>
+                            <div class="revenue-item">
+                                <strong>TV Ads:</strong> ¥1.8 trillion (2021)
+                            </div>
+                        </div>
+                        <p>Digital advertising now exceeds television</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Future Trends -->
+        <div class="slide" data-slide="10">
+            <div class="slide-content">
+                <h1>The Path Forward</h1>
+                <div class="future-trends">
+                    <div class="trend">
+                        <h3>AI and Automation</h3>
+                        <p>Automated news production, personalized content delivery, and data-driven journalism</p>
+                    </div>
+                    <div class="trend">
+                        <h3>Short-form Video Content</h3>
+                        <p>TikTok and Instagram Reels driving content strategy across all platforms</p>
+                    </div>
+                    <div class="trend">
+                        <h3>Cross-platform Integration</h3>
+                        <p>Traditional media companies building comprehensive digital ecosystems</p>
+                    </div>
+                    <div class="trend">
+                        <h3>Credibility vs Adaptation</h3>
+                        <p>Balancing editorial integrity with rapid digital transformation demands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Conclusion -->
+        <div class="slide" data-slide="11">
+            <div class="slide-content">
+                <h1>Key Takeaways</h1>
+                <div class="takeaways">
+                    <div class="takeaway">
+                        <h3>Complex Ecosystem</h3>
+                        <p>Japan's media landscape balances deep-rooted traditions with rapid digital innovation</p>
+                    </div>
+                    <div class="takeaway">
+                        <h3>Political Divisions</h3>
+                        <p>Clear conservative-liberal splits persist across platforms, but institutional power remains strong</p>
+                    </div>
+                    <div class="takeaway">
+                        <h3>Generational Shift</h3>
+                        <p>Dramatic migration toward digital platforms among younger demographics</p>
+                    </div>
+                    <div class="takeaway">
+                        <h3>Adaptation Challenge</h3>
+                        <p>Traditional media must evolve while maintaining editorial credibility and public trust</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Questions -->
+        <div class="slide" data-slide="12">
+            <div class="slide-content questions-slide">
+                <h1>Questions & Discussion</h1>
+                <div class="discussion-prompt">
+                    <p>Thank you for your attention</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button id="prevBtn" class="nav-btn">Previous</button>
+            <span class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">12</span>
+            </span>
+            <button id="nextBtn" class="nav-btn">Next</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
